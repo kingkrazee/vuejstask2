@@ -1,23 +1,12 @@
 <template>
-  <NavbarComp/>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/fetching">Fetching Data</router-link> |
-    <router-link to="/signup">Sign Up</router-link>
-    <router-view/>
+    <router-link to="/fetching">Fetching</router-link>
   </nav>
-  <NavbarComp/>
-  
+  <router-view/>
 </template>
-<script>
-import NavbarComp from "./components/NavbarComp";
-export default{
- components:{
-  NavbarComp
- }
-}
-</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
